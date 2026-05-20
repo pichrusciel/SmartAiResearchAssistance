@@ -1,0 +1,13 @@
+Retrieval-Augmented Generation (RAG)
+
+RAG combines retrieval systems with generative models. First introduced
+by Lewis et al. (2020), RAG addresses the limitation of LLMs being
+limited to their training data.
+
+Components of a RAG system:
+1. Document store with vector embeddings
+2. Retriever to find relevant documents
+3. Generator (LLM) to produce responses
+
+Benefits include reduced hallucination, up-to-date information,
+and source attribution.
