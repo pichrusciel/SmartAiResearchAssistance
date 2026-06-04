@@ -33,22 +33,24 @@ Multi-Query Retriever utilizes `gpt-4o-mini` to automatically rewrite a single u
 The pipeline includes a built-in benchmark method (`compare_retrievers`) that prints footprint reports side-by-side for analyzing retrieval accuracy and token density. 
 
 ## Repository Structure
-smart-ai-research-assistant/<br>
-├── .venv&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;# Project dedicated Python environment<br>
-├── database/&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;# Persistent Chroma local vector store (Git ignored)<br>
-├── documents/&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;# Target directory for source materials (.txt, .pdf)<br>
-│   ├── attention_mechanisms.txt<br>
-│   ├── langchain_docs.pdf<br>
-│   └── rag_survey.txt<br>
-├── src/<br>
-│   └── smartairesearchassistance/<br>
-│       ├── __init__.py<br>
-│       ├── document_loader.py&emsp;&emsp; # Router for PyPDF & Text loaders<br>
-│       ├── main.py&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;# Synchronous wrapper and async execution coordinator<br>
-│       ├── researcher.py&emsp;&emsp;&emsp;&emsp;&emsp; # AIResearchAssistant core logic and Pydantic schemas<br>
-│       └── structlogger.py&emsp;&emsp;&emsp;&emsp;&emsp;# Structured logging engine configuration<br>
-├── .env.example&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; # Environment configuration template<br>
-├── .gitignore&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; # Protection matrix preventing data/credential leaks<br>
-├── pyproject.toml&emsp;&emsp;&emsp;&emsp;&emsp;# Metadata configuration<br>
-├── uv.lock&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; # Locked dependency footprint tracking<br>
-└── README.md&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;# Architecture documentation<br>
+```text
+smart-ai-research-assistant/
+├── .venv                           # Project dedicated Python environment
+├── database/                       # Persistent Chroma local vector store (Git ignored)
+├── documents/                      # Target directory for source materials (.txt, .pdf)
+│   ├── attention_mechanisms.txt
+│   ├── langchain_docs.pdf
+│   └── rag_survey.txt
+├── src/
+│   └── smartairesearchassistance/
+│       ├── __init__.py
+│       ├── document_loader.py      # Router for PyPDF & Text loaders
+│       ├── main.py                 # Synchronous wrapper and async execution coordinator
+│       ├── researcher.py           # AIResearchAssistant core logic and Pydantic schemas
+│       └── structlogger.py         # Structured logging engine configuration
+├── .env.example                    # Environment configuration template
+├── .gitignore                      # Protection matrix preventing data/credential leaks
+├── pyproject.toml                  # Metadata configuration
+├── uv.lock                         # Locked dependency footprint tracking
+└── README.md                       # Architecture documentation
+```
